@@ -16,6 +16,7 @@ packtage.json
 Informações para baixar as dependências do meu projeto
 
 ESTUDAR FDS
+https://docs.google.com/document/d/1anRtOmUJdu24TuA1Qvl9wo9BQm4Qqaq1Q7eLB6aiDlo/edit
  1 - verbos http (do mozila developer)
  2 - status code http(do mozila developer)
 
