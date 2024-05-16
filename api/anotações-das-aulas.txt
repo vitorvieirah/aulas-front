@@ -1,0 +1,21 @@
+COMANDOS NODE
+
+node --version
+Verifica a versão do node
+
+npm init
+Inicia um pacote npm no seu projeto
+
+npm install <dependência>
+Baixa uma dependência no seu projeto
+
+registry
+Lugar onde você pode deixar sua biblioteca disponível
+
+packtage.json
+Informações para baixar as dependências do meu projeto
+
+ESTUDAR FDS
+ 1 - verbos http (do mozila developer)
+ 2 - status code http(do mozila developer)
+

@@ -1,0 +1,4 @@
+COMANDOS NODE
+
+node --version
+Verifica a versão do node
