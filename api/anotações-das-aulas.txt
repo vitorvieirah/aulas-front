@@ -20,3 +20,39 @@ https://docs.google.com/document/d/1anRtOmUJdu24TuA1Qvl9wo9BQm4Qqaq1Q7eLB6aiDlo/
  1 - verbos http (do mozila developer)
  2 - status code http(do mozila developer)
 
+Claro, vou explicar linha por linha o código JavaScript fornecido:
+
+javascript
+Copiar código
+function todos(){
+Essa linha declara uma função chamada todos(). Funções em JavaScript são blocos de código que podem ser chamados e executados quando necessário.
+
+javascript
+Copiar código
+    let path = `${URL}/lanches`;
+Aqui, uma variável path é declarada usando a palavra-chave let. Esta variável armazena o caminho para uma URL que é construída usando uma variável chamada URL (presumivelmente definida em algum lugar do seu código, contendo o endereço base) e a string "/lanches".
+
+javascript
+Copiar código
+    fetch(path)
+Esta linha faz uma solicitação HTTP usando o método fetch(). O fetch() é uma API moderna que fornece uma interface para buscar recursos na web. Aqui, está sendo usada para fazer uma solicitação GET para o URL armazenado na variável path.
+
+javascript
+Copiar código
+        .then(response => response.json())
+Depois que a solicitação é feita, esta linha processa a resposta recebida. Ela usa o método .then() para manipular a resposta (um objeto Response). A seta (=>) é uma forma concisa de definir uma função de retorno. Neste caso, estamos transformando a resposta em JSON usando o método json() da resposta.
+
+javascript
+Copiar código
+        .then(data => console.log(data))
+Esta linha lida com os dados convertidos para JSON que foram obtidos da resposta anterior. Novamente, usa-se .then() para processar esses dados. Aqui, estamos simplesmente imprimindo os dados no console usando console.log().
+
+javascript
+Copiar código
+        .catch(error => console.log(error));
+Por fim, esta linha lida com qualquer erro que possa ocorrer durante o processo de busca ou conversão para JSON. Se ocorrer algum erro, ele será capturado e impresso no console usando console.log().
+
+javascript
+Copiar código
+}
+Fecha a definição da função todos().

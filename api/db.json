@@ -1,0 +1,51 @@
+{
+  "lanches": [
+    {
+      "id": "1",
+      "nome": "X-Burguer",
+      "preco": 22.5,
+      "descricao": "O melhor X-Burguer da região",
+      "ingredientes": [
+        "hamburguer de angus",
+        "alface",
+        "tomate",
+        "molho especial",
+        "queijo"
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "X-Bacon",
+      "preco": 29.7,
+      "descricao": "O melhor X-Bacon da região",
+      "ingredientes": [
+        "hamburguer de angus",
+        "alface",
+        "bacon",
+        "tomate",
+        "molho especial",
+        "queijo"
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "X-Egg",
+      "preco": 27
+    },
+    {
+      "id": "3",
+      "nome": "X-Salada",
+      "preco": 19
+    },
+    {
+      "id": "",
+      "nome": "X-Calabresa",
+      "preco": 30.56
+    },
+    {
+      "id": "5",
+      "nome": "X-Calabresa com bacon",
+      "preco": 35.5
+    }
+  ]
+}
