@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de exercicios</title>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button{
+            width: 80px;
+            height: 30px;
+            font-size: 15px;
+            background-color: bisque;
+        }
+
+        button:hover{
+            background-color: rgb(255, 241, 223);
+            cursor: pointer;
+        }
+
+        button:active{
+            background-color: rgb(255, 251, 246);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de array</h1>
+    <button type="button" onclick="mainFilter()">Filter</button>
+    <button type="button" onclick="mainMap()">Map</button>
+    <button type="button" onclick="mainReduce()">Reduce</button>
+    <button type="button" onclick="mainSlice()">Slice</button>
+
+    <script src="./exercicios.js"></script>
+</body>
+</html>

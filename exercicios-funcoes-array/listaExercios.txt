@@ -1,0 +1,108 @@
+1. filter
+Exercício: Dada uma lista de números, filtre e retorne todos os números pares.
+
+javascript
+Copiar código
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// Resultado esperado: [2, 4, 6, 8, 10]
+
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers);
+2. map
+Exercício: Dada uma lista de números, crie uma nova lista onde cada número é multiplicado por 2.
+
+javascript
+Copiar código
+const numbers = [1, 2, 3, 4, 5];
+// Resultado esperado: [2, 4, 6, 8, 10]
+
+const doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers);
+3. reduce
+Exercício: Dada uma lista de números, calcule a soma de todos os números.
+
+javascript
+Copiar código
+const numbers = [1, 2, 3, 4, 5];
+// Resultado esperado: 15
+
+const sum = numbers.reduce((total, num) => total + num, 0);
+console.log(sum);
+4. slice
+Exercício: Dada uma lista de frutas, crie uma nova lista contendo apenas as três primeiras frutas.
+
+javascript
+Copiar código
+const fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+// Resultado esperado: ['apple', 'banana', 'cherry']
+
+const firstThreeFruits = fruits.slice(0, 3);
+console.log(firstThreeFruits);
+5. splice
+Exercício: Dada uma lista de frutas, remova duas frutas a partir do segundo índice e substitua por 'kiwi' e 'mango'.
+
+javascript
+Copiar código
+const fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+// Resultado esperado: ['apple', 'banana', 'kiwi', 'mango', 'elderberry']
+
+fruits.splice(2, 2, 'kiwi', 'mango');
+console.log(fruits);
+6. find
+Exercício: Dada uma lista de objetos de pessoas com nome e idade, encontre a primeira pessoa que tem idade maior que 30.
+
+javascript
+Copiar código
+const people = [
+    { name: 'John', age: 25 },
+    { name: 'Jane', age: 32 },
+    { name: 'Mike', age: 28 },
+    { name: 'Alice', age: 35 }
+];
+// Resultado esperado: { name: 'Jane', age: 32 }
+
+const person = people.find(person => person.age > 30);
+console.log(person);
+7. every
+Exercício: Dada uma lista de números, verifique se todos os números são positivos.
+
+javascript
+Copiar código
+const numbers = [1, 2, 3, 4, 5];
+// Resultado esperado: true
+
+const allPositive = numbers.every(num => num > 0);
+console.log(allPositive);
+8. some
+Exercício: Dada uma lista de números, verifique se pelo menos um número é par.
+
+javascript
+Copiar código
+const numbers = [1, 3, 5, 7, 8];
+// Resultado esperado: true
+
+const hasEvenNumber = numbers.some(num => num % 2 === 0);
+console.log(hasEvenNumber);
+9. forEach
+Exercício: Dada uma lista de nomes, imprima cada nome no console.
+
+javascript
+Copiar código
+const names = ['Alice', 'Bob', 'Charlie', 'David'];
+// Saída esperada:
+// Alice
+// Bob
+// Charlie
+// David
+
+names.forEach(name => console.log(name));
+10. sort
+Exercício: Dada uma lista de números, ordene-os em ordem crescente.
+
+javascript
+Copiar código
+const numbers = [5, 3, 8, 1, 2];
+// Resultado esperado: [1, 2, 3, 5, 8]
+
+const sortedNumbers = numbers.sort((a, b) => a - b);
+console.log(sortedNumbers);
