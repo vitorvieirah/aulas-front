@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Treino prova prática</title>
+</head>
+<body>
+    <header>
+        <h1>CRUD Pessoas</h1>
+    </header>
+    <main>
+        <section class="sec-1">
+            <h2>Consultar todos</h2>
+            <button type="button" class="button-consultar-todos" onclick="getAll()">Consultar</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Sexo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+
+        <section class="sec-2">
+            <h2>Consultar por id e alterar</h2>
+            <div class="input-id">
+                <label for="">ID</label>
+                <input type="text" id="id-pessoa">
+            </div>
+            <button type="button" class="button-consultar-por-id" onclick="getById()">Consultar</button>
+
+            <div class="inputs">
+                <label for="">Nome</label>
+                <input type="text" id="nome-pessoa">
+            </div>
+
+            <div class="inputs">
+                <label for="">Idade</label>
+                <input type="text" id="idade-pessoa">
+            </div>
+
+            <div class="inputs">
+                <label for="">Sexo</label>
+                <input type="text" id="sexo-pessoa">
+            </div>
+
+            <div class="buttons-put">
+                <button type="button" onclick="deletePerson()">Deletar</button>
+                <button type="button" onclick="alterar()">Alterar</button>
+                <button type="button" id="button-gravar" onclick="update()">Gravar</button>
+            </div>
+        </section>
+        <hr>
+
+        <section class="sec-3">
+            <h2>Cadastrar uma Pessoa</h2>
+            <div class="inputs">
+                <label for="">Nome</label>
+                <input type="text" id="nome-pessoa-cad">
+            </div>
+
+            <div class="inputs">
+                <label for="">Idade</label>
+                <input type="text" id="idade-pessoa-cad">
+            </div>
+
+            <div class="inputs">
+                <label for="">Sexo</label>
+                <input type="text" id="sexo-pessoa-cad">
+            </div>
+
+            <button type="button" onclick="register()">Cadastrar</button>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>

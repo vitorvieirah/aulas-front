@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: rgb(31, 59, 59);
+    color: white;
+    border: solid 2px black; 
+    align-items: center;
+    width: 800px;
+}
+
+body{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+th{
+    width: 50px;
+    border-bottom: solid 1px;
+}
+
+.sec-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sec-1 > h2{
+    margin-top: 10px;
+}
+
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+    
+.sec-3{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+button{
+    height: 20px;
+    width: 100px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+#button-gravar{
+    visibility: hidden;
+}
+
+button:hover{
+    background-color: #b1abab;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #979393;
+}
+
+.input-id{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-id > input{
+    width: 30px;
+    font-size: 15px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.buttons-put{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+table{
+    border: solid;
+    width: 500px;
+    text-align: center;
+}
+
+hr{
+    border: solid 1px;
+    width: 700px;
+}
+
+input{
+    height: 20px;
+    border-radius: 20px;
+    padding-left: 5px; 
+    padding-right: 5px;
+}
