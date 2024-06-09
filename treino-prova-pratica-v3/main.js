@@ -53,8 +53,6 @@ async function getById(){
 
 function update(){
     let inputs = getInputsUpdate();
-    desativaInputs();
-    desativarBotaoGravar();
 
     let id = document.getElementById('id-person').value;
     let nomeP = inputs[0].value;
@@ -63,11 +61,19 @@ function update(){
 
     let path = `${URL}/${id}`;
 
-    let parametros = {
+    let personUpdate = {
         nome: nomeP,
         idade: idadeP,
         sexo: sexoP
     }
+
+    let parametros = {
+        method: "PUT",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify(personUpdate)
+    };
 
     fetch(path, parametros)
         .then(response => response.json())
@@ -101,22 +107,34 @@ function register(){
 }
 
 function deletePerson(){
+    let id = document.getElementById('id-person').value;
 
+    let path = `${URL}/${id}`;
+
+    let parametros = {
+        method: "DELETE",
+        herders:{
+            "Content-type": "application/json"
+        }
+    }
+
+    fetch(path, parametros)
+        .then(response => response.json())
+        .then(data => console.log("Excluido com sucesso", data))
+        .catch(err => console.log(err));
 }
 
 function alterar(){
     ativarInputs();
-    let botao = document.getElementById('button-gravar');
-    ativarBotaoGravar(botao);
 }
 
-function ativarBotaoGravar(botao){
-    botao.style.visibility = 'visible';
-}
+// function ativarBotaoGravar(botao){
+//     botao.style.visibility = 'visible';
+// }
 
-function desativarBotaoGravar(botao){  
-    botao.style.visibility = 'hidden';
-}
+// function desativarBotaoGravar(botao){  
+//     botao.style.visibility = 'hidden';
+// }
 
 function getInputsUpdate(){
     let inputs = [];

@@ -66,9 +66,9 @@ button{
     border-radius: 10px;
 }
 
-#button-gravar{
+/* #button-gravar{
     visibility: hidden;
-}
+} */
 
 button:hover{
     background-color: #b1abab;
