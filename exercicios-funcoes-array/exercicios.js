@@ -3,6 +3,28 @@
 
 let numbers = [5,6,2,10,18,19,25,97];
 let frutas = ["Maça", "Manga", "Pessego", "Maracuja", "Kiwi", "Morango", "Limão"];
+let persons = [
+    {
+        "nome": "Vitor",
+        "idade": 40
+    },
+    {
+        "nome": "Pedro",
+        "idade": 35
+    },
+    {
+        "nome": "Maria",
+        "idade": 32
+    },
+    {
+        "nome": "André",
+        "idade": 21
+    },
+    {
+        "nome": "João",
+        "idade": 15
+    }
+]
 
 function mainFilter(){
     console.log("Lista de numeros: ", numbers);
@@ -46,10 +68,49 @@ function somaDosNumeros(){
 // Exercício: Dada uma lista de frutas, crie uma nova lista contendo apenas as três primeiras frutas.
 
 function mainSlice(){
-    console.log("Lista de numeors: ", numbers);
-
+    console.log("Lista de numeors: ", frutas);
+    console.log("Apenas as tres primeiros posições: ", novaListaComFrutas());
 }
 
 function novaListaComFrutas(){
-    return 
+    return frutas.slice(0, 3);
+}
+
+// //=====================================================================================
+// 6. find
+// Exercício: Dada uma lista de objetos de pessoas com nome e idade, encontre a primeira pessoa que tem idade maior que 30.
+
+function mainFind(){
+    console.log("Lista de pessoas: ", persons);
+    console.log("Primeira pessoa com maior de 30 anos: ", findAdultPerson());
+}
+
+function findAdultPerson(){
+    return persons.find(person => person.idade > 30);
+}
+
+//=========================================================================================
+// 7. every
+// Exercício: Dada uma lista de números, verifique se todos os números são positivos.
+
+function mainEvery(){
+    console.log("Lista de numeros: ", numbers);
+    console.log("Verica numeros negativos: ", validaNumerosNegativos());
+}
+
+function validaNumerosNegativos(){
+    return numbers.every(number => number > 0);
+}
+
+// //=======================================================================================
+// 8. some
+// Exercício: Dada uma lista de números, verifique se pelo menos um número é par.
+
+function mainSome(){
+    console.log("Lista de numeros: ", numbers);
+    console.log("Valida se tem algum numero par: ", validaNumeroPar());
+}
+
+function validaNumeroPar(){
+    return numbers.some(number => number % 2 === 0);
 }
